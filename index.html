@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zeno Zhou | AI Agent Researcher & Builder</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0c;
+      color: #f4f4f5;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav {
+      width: 100%;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #252528;
+      position: sticky;
+      top: 0;
+      background: rgba(11, 11, 12, 0.95);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 21px;
+      letter-spacing: 2px;
+    }
+
+    nav .links a {
+      margin-left: 28px;
+      color: #a1a1aa;
+    }
+
+    nav .links a:hover {
+      color: white;
+    }
+
+    section {
+      padding: 100px 8%;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag {
+      color: #8f8f98;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(50px, 8vw, 100px);
+      line-height: 0.95;
+      letter-spacing: -5px;
+      max-width: 950px;
+    }
+
+    .hero h2 {
+      font-size: clamp(25px, 4vw, 45px);
+      margin-top: 30px;
+      color: #b5b5bd;
+      max-width: 900px;
+      font-weight: 400;
+    }
+
+    .hero p {
+      margin-top: 28px;
+      max-width: 720px;
+      color: #8d8d96;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 1px solid #3a3a40;
+      padding: 12px 20px;
+      margin-right: 12px;
+      border-radius: 7px;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: black;
+    }
+
+    .section-title {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .section-desc {
+      color: #8d8d96;
+      margin-bottom: 45px;
+      max-width: 700px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #252528;
+      padding: 28px;
+      border-radius: 12px;
+      background: #111113;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #55555e;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-bottom: 13px;
+    }
+
+    .card p {
+      color: #9999a3;
+      margin-bottom: 18px;
+    }
+
+    .tech {
+      font-size: 13px;
+      color: #707078;
+      margin-bottom: 20px;
+    }
+
+    .card-link {
+      color: white;
+      font-size: 14px;
+    }
+
+    .research-item {
+      padding: 25px 0;
+      border-bottom: 1px solid #252528;
+    }
+
+    .research-item h3 {
+      font-size: 25px;
+    }
+
+    .research-item p {
+      color: #92929b;
+      margin-top: 8px;
+      max-width: 850px;
+    }
+
+    .quote {
+      font-size: clamp(25px, 4vw, 48px);
+      max-width: 950px;
+      line-height: 1.25;
+    }
+
+    footer {
+      border-top: 1px solid #252528;
+      padding: 50px 8%;
+      color: #72727b;
+    }
+
+    @media (max-width: 700px) {
+      nav .links {
+        display: none;
+      }
+
+      h1 {
+        letter-spacing: -3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">ZENO</div>
+
+  <div class="links">
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#building">Building</a>
+    <a href="#about">About</a>
+    <a href="https://github.com/Immortsmen" target="_blank">GitHub</a>
+  </div>
+</nav>
+
+
+<section class="hero">
+
+  <div class="tag">
+    AI AGENT · MULTIMODAL INTELLIGENCE · AI PRODUCTS
+  </div>
+
+  <h1>
+    Zeno Zhou
+  </h1>
+
+  <h2>
+    AI Agent Researcher & Builder
+  </h2>
+
+  <p>
+    I am an undergraduate at Shenzhen University exploring how AI agents
+    can remember experience, reason about complex environments,
+    collaborate with other agents and continuously improve themselves.
+  </p>
+
+  <div class="buttons">
+
+    <a class="btn" href="#projects">
+      View Projects
+    </a>
+
+    <a class="btn"
+       href="https://github.com/Immortsmen"
+       target="_blank">
+      GitHub
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<section id="research">
+
+  <h2 class="section-title">Research</h2>
+
+  <p class="section-desc">
+    My current interests focus on persistent AI agents,
+    multimodal reasoning and self-improving intelligent systems.
+  </p>
+
+
+  <div class="research-item">
+
+    <h3>Agent Memory & Self-Evolution</h3>
+
+    <p>
+      Exploring how autonomous agents can learn from previous tasks
+      through long-term memory, experience retrieval, reflection,
+      skill evolution and recursive self-improvement.
+    </p>
+
+  </div>
+
+
+  <div class="research-item">
+
+    <h3>Multimodal Agent Reasoning</h3>
+
+    <p>
+      Studying how agents integrate visual, spatial and structured
+      information to perform complex reasoning and decision making.
+      My research experience includes multimodal geo-economic
+      reasoning involving satellite imagery, POI data and population information.
+    </p>
+
+  </div>
+
+
+  <div class="research-item">
+
+    <h3>Multi-Agent & Organizational Memory</h3>
+
+    <p>
+      Exploring how multiple persistent agents share knowledge,
+      coordinate tasks and maintain organizational memory
+      over long-running workflows.
+    </p>
+
+  </div>
+
+
+  <div class="research-item">
+
+    <h3>Computer Vision</h3>
+
+    <p>
+      Research experience in computer vision and feature learning,
+      with interests in connecting visual perception with multimodal
+      agents and intelligent systems.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section id="projects">
+
+  <h2 class="section-title">Featured Projects</h2>
+
+  <p class="section-desc">
+    Selected work across AI agents, world simulation,
+    self-improvement and AI product engineering.
+  </p>
+
+
+  <div class="grid">
+
+
+    <div class="card">
+
+      <h3>RebuildWorld</h3>
+
+      <p>
+        A causal world simulation engine powered by LLM agents.
+        Users can modify key events in an existing world,
+        while the system dynamically updates characters,
+        world states and future events.
+      </p>
+
+      <div class="tech">
+        LLM Agent · Causal Reasoning · World State · Simulation
+      </div>
+
+      <a class="card-link"
+         href="https://github.com/Immortsmen/rebuild_world"
+         target="_blank">
+
+         View Repository →
+
+      </a>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h3>OmniSoLo-RSI</h3>
+
+      <p>
+        Research on persistent agent memory,
+        experience learning and recursive self-improvement.
+        The project investigates whether agents can continuously
+        improve through previous task experience.
+      </p>
+
+      <div class="tech">
+        Agent Memory · RSI · Self-Evolution · LLM
+      </div>
+
+      <a class="card-link"
+         href="https://github.com/Immortsmen/OmniSoLo-RSI-"
+         target="_blank">
+
+         View Repository →
+
+      </a>
+
+    </div>
+
+
+
+    <div class="card">
+
+      <h3>WorldForge AI</h3>
+
+      <p>
+        An interactive AI world-generation platform where users
+        create fictional worlds and make decisions while LLM agents
+        dynamically evolve the story and environment.
+      </p>
+
+      <div class="tech">
+        FastAPI · React · LLM Agent · Generative AI
+      </div>
+
+      <a class="card-link"
+         href="https://github.com/Immortsmen/world-creator"
+         target="_blank">
+
+         View Repository →
+
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<section id="building">
+
+  <h2 class="section-title">Building</h2>
+
+  <p class="section-desc">
+    Beyond research, I am interested in turning agent systems
+    into practical AI products and digital workers.
+  </p>
+
+
+  <div class="grid">
+
+
+    <div class="card">
+
+      <h3>Digital Employees</h3>
+
+      <p>
+        Exploring AI systems that combine planning,
+        memory, retrieval, tool use and execution
+        to perform real workflows instead of only generating answers.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>AI-native Organizations</h3>
+
+      <p>
+        I am interested in how small teams — or even individual founders —
+        can use persistent AI agents to build increasingly capable
+        digital organizations.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>AI Entrepreneurship</h3>
+
+      <p>
+        Building and testing AI products through research,
+        hackathons and entrepreneurial programs,
+        with a focus on translating new agent capabilities
+        into useful products.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="quote">
+
+    “I am interested in moving AI from models that answer questions
+    toward agents that remember, learn, act and work.”
+
+  </div>
+
+</section>
+
+
+
+<section id="about">
+
+  <h2 class="section-title">About</h2>
+
+  <p class="section-desc">
+
+    I am Zeno Zhou, an undergraduate at Shenzhen University.
+
+    My work sits at the intersection of AI agents,
+    multimodal intelligence, intelligent systems and AI products.
+
+    I enjoy both researching new agent architectures
+    and turning them into working prototypes.
+
+  </p>
+
+
+  <div class="buttons">
+
+    <a class="btn"
+       href="https://github.com/Immortsmen"
+       target="_blank">
+
+      GitHub
+
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<footer>
+
+  © 2026 Zeno Zhou · Immortsmen
+
+</footer>
+
+
+</body>
+</html>
